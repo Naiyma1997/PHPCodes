@@ -14,7 +14,7 @@
     	<tr>
     		<?php
     		   require_once 'model/dbconnect.php';
-               $books = $_GET["books"];
+               $books = $_GET["book"];
                $books = getResult("SELECT * FROM books WHERE name = '$books'");
                foreach ($books as $i) 
                echo "
